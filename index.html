@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="m-8">
+    <header>
+
+    </header>
+    <main>
+        <!-- main container -->
+        <div class="flex flex-col md:flex-row">
+            <!-- shape card container -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                <!-- triangle shape -->
+                <div class="card bg-base-100 w-80 shadow-xl">
+                    <figure>
+                        <img src="images/triangle.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Triangle</h2>
+                        <p class="text-center">Area: 0.5 x b x h</p>
+                        <!-- triangle conected area -->
+                        <div class="">
+                            <input id="triangle-base" class="w-20 text-[20px] bg-slate-600 rounded-sm" type="text" placeholder="b">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input id="triangle-height" class="w-20 text-[20px] bg-slate-600  rounded-sm" type="text" name="" id=""
+                                placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-[20px]">Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div onclick="calculateTriangleArea()" class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rectangle Shape -->
+                <div class="card bg-base-100 w-80 shadow-xl">
+                    <figure>
+                        <img src="images/rectangle.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area: 0.5 x W x L</p>
+                        <!--placeholder -->
+                        <div class="flex">
+                            <!-- width -->
+                            <input id="rect-width" class="text-[18px] bg-slate-500 rounded-sm w-20" type="text" placeholder="W">
+                            <span class="ml-4 mr-2">cm</span>
+                            <!-- height -->
+                             <input id="rect-length" class="text-[18px] bg-slate-500 rounded-sm w-20" type="text" placeholder="L">
+                             <span class="ml-4 mr-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-[20px]">Area: <span id="rectangle-area"></span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="rectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- triangle shape -->
+                <div class="card bg-base-100 w-80 shadow-xl">
+                    <figure>
+                       <img src="images/parallelogram.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- triangle shape -->
+                <div class="card bg-base-100 w-80 shadow-xl">
+                    <figure>
+                        <img src="images/rhombus.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- triangle shape -->
+                <div class="card bg-base-100 w-80 shadow-xl">
+                    <figure>
+                      <img src="images/pentagon.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- triangle shape -->
+                <div class="card bg-base-100 w-80 shadow-xl">
+                    <figure>
+                      <img src="images/ellipse.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- area calculation container -->
+            <div class="w-80 border-2 border-gray-700 rounded-md">
+                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+            </div>
+        </div>
+    </main>
+   <script src="script/triangle-calculate.js"></script>
+   <script src="script/rectangle.js"></script>
+
+</body>
+
+</html>
