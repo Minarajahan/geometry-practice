@@ -68,16 +68,27 @@
                         </div>
                     </div>
                 </div>
-                <!-- triangle shape -->
+                <!-- parallelogram shape -->
                 <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                        <img src="images/parallelogram.png" alt="">
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area:(A)=A x H</p>
+                        <!-- input area -->
+                         <div class="flex">
+                            <input class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="A">
+                            <span class="mr-2 ml-4">cm</span>
+                            <input class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="H">
+                            <span class="mr-2 ml-4">cm</span>
+                         </div>
+                         <!-- cm area -->
+                          <div>
+                            <p class="text-[20px]">Area:<span id=""></span><span>cm<sup>2</sup></span></p>
+                          </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="parallelogram()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -130,6 +141,7 @@
     </main>
    <script src="script/triangle-calculate.js"></script>
    <script src="script/rectangle.js"></script>
+   <script src="script/parallelogram.js"></script>
 
 </body>
 
