@@ -12,6 +12,17 @@
 
 <body class="m-8">
     <header>
+        <nav>
+            <div class="flex justify-between items-center bg-slate-50 rounded-sm mb-10">
+                <div class="ml-4">
+                    <h1 class="text-3xl text-sky-600">Interactive</h1>
+                    <p>Geometry Genius</p>
+                </div>
+                <div class="">
+                    <button class="w-20 mr-6 py-2 rounded-md bg-sky-500 text-black">Blog</button>
+                </div>
+            </div>
+        </nav>
 
     </header>
     <main>
@@ -78,14 +89,14 @@
                         <p>Area:(A)=A x H</p>
                         <!-- input area -->
                          <div class="flex">
-                            <input class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="A">
+                            <input id="area" class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="A">
                             <span class="mr-2 ml-4">cm</span>
-                            <input class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="H">
+                            <input id="height" class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="H">
                             <span class="mr-2 ml-4">cm</span>
                          </div>
                          <!-- cm area -->
                           <div>
-                            <p class="text-[20px]">Area:<span id=""></span><span>cm<sup>2</sup></span></p>
+                            <p  class="text-[20px]">Area:<span id="inerValueDisplay"></span><span>cm<sup>2</sup></span></p>
                           </div>
                         <div class="card-actions justify-end">
                             <button onclick="parallelogram()" class="btn btn-primary w-full">Calculate</button>
