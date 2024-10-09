@@ -15,7 +15,7 @@
         <nav>
             <div class="flex justify-between items-center bg-slate-50 rounded-sm mb-10 py-2">
                 <div class="ml-4">
-                    <h1 class="text-3xl text-sky-600">Interactive</h1>
+                    <h1 class="text-3xl text-sky-600 font-bold">Interactive</h1>
                     <p>Geometry Genius</p>
                 </div>
                 <div class="">
@@ -31,23 +31,23 @@
             <!-- shape card container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 <!-- triangle shape -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                <div class="card bg-base-100 w-80 shadow-xl  bg-red-300">
                     <figure>
                         <img src="images/triangle.png" alt="">
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Triangle</h2>
-                        <p class="text-center">Area: 0.5 x b x h</p>
+                        <h2 class="card-title text-black">Triangle</h2>
+                        <p class="text-center text-black">Area: 0.5 x b x h</p>
                         <!-- triangle conected area -->
                         <div class="">
-                            <input id="triangle-base" class="w-20 text-[20px] bg-slate-600 rounded-sm" type="text" placeholder="b">
-                            <span class="mr-4 ml-2">cm</span>
-                            <input id="triangle-height" class="w-20 text-[20px] bg-slate-600  rounded-sm" type="text" name="" id=""
+                            <input id="triangle-base" class="w-20 text-[20px] text-black bg-slate-600 rounded-sm" type="text" placeholder="b">
+                            <span class="mr-4 ml-2 text-black">cm</span>
+                            <input id="triangle-height" class="w-20 text-[20px] bg-slate-600  rounded-sm text-black" type="text" name="" id=""
                                 placeholder="h">
-                            <span>cm</span>
+                            <span class="text-black ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-[20px]">Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
+                            <p class="text-[20px] text-black">Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
                         </div>
                         <div onclick="calculateTriangleArea()" class="card-actions">
                             <button class="btn btn-primary w-full">Calculate</button>
@@ -104,31 +104,31 @@
                     </div>
                 </div>
                 <!-- Rhombus shape -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                <div class="card bg-base-100 w-80 shadow-xl bg-teal-300 mt-6">
                     <figure>
-                        <img src="images/rhombus.png" alt="">
+                        <img class="mt-2" src="images/rhombus.png" alt="">
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Rhombus</h2>
+                        <h2 class="card-title text-black">Rhombus</h2>
                         
-                        <p>Area = 0.5 x d x b</p>
+                        <p class="text-black">Area = 0.5 x d x b</p>
                         <!-- calculate area -->
                          <div class="flex">
-                            <input id="detect-area" class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="p">
-                            <span class="ml-4 mr-2">cm</span>
-                            <input id="base-area" class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="b">
-                            <span class="ml-4 mr-2">cm</span>
+                            <input id="detect-area" class="w-20 bg-slate-500 rounded-sm text-black" type="text" placeholder="p">
+                            <span class="ml-4 mr-2 text-black">cm</span>
+                            <input id="base-area" class="w-20 text-black bg-slate-500 rounded-sm" type="text" placeholder="b">
+                            <span class="ml-4 mr-2 text-black">cm</span>
                          </div>
                          <div>
-                            <p>Area: <span id="rhombus-area">0</span><span>cm<sup>2</sup></span></p>
+                            <p class="text-black">Area: <span id="rhombus-area">0</span><span>cm<sup>2</sup></span></p>
                          </div>
                         <div class="card-actions justify-end">
-                            <button onclick="rhombusInputOutput()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="rhombusInputOutput()" class="btn btn-primary w-full text-black">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Pentagon shape -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                <div class="card bg-base-100 w-80 shadow-xl mt-6">
                     <figure>
                       <img src="images/pentagon.png" alt="">
                     </figure>
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <!-- Ellipse shape -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                <div class="card bg-base-100 w-80 shadow-xl mt-6">
                     <figure>
                       <img src="images/ellipse.png" alt="">
                     </figure>
