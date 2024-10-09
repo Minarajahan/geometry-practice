@@ -1,24 +1,21 @@
-function rhombusInputOutput(){
-const rhombusInputOne= getInputValuId('detect-area');
-const rhombusInputTwo=getInputValuId('base-area');
-
-// calculate value
-const areaCalculate = 0.5*rhombusInputOne*rhombusInputTwo;
-
-// Display the value onscreen
-displayOnScreen('rhombus-area',areaCalculate);
-
-
+function calculateRombusArea(){
+    const rombusInputOne=getInputById('rombus-inputOne');
+    const rombusInputTwo=getInputById('rombus-inputTwo');
+    // calculation area
+    const areaValue = 0.5*rombusInputOne*rombusInputTwo;
+    // Display Onscreen
+    displayOnscreen('rhombus-area',areaValue);
 }
-function getInputValuId(rhobusElement){
-    const rhombusInnerText=document.getElementById(rhobusElement);
-    const rombusValue = rhombusInnerText.value ;
-    const getInnerValue= parseFloat(rombusValue);
-    return getInnerValue;
+// take input
+function getInputById(element){
+    const getInputText = document.getElementById(element)
+    const getInputValue = getInputText.value ;
+    const finalValue= parseFloat(getInputValue);
+    return finalValue;
+}
+// display onscreen function
+function displayOnscreen(onScreenId,areaValue){
+    const displayArea= document.getElementById(onScreenId);
+    displayArea.innerText=areaValue;
 }
 
-// set area
-function displayOnScreen(displayId,areaCalculate){
-    const displayAreaValue=document.getElementById(displayId);
-    displayAreaValue.innerText=areaCalculate;
-}
