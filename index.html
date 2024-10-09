@@ -139,16 +139,26 @@
                         </div>
                     </div>
                 </div>
-                <!-- triangle shape -->
+                <!-- Ellipse shape -->
                 <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                       <img src="images/ellipse.png" alt="">
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area(A):πab</p>
+                        <!-- calculate area -->
+                        <div class="flex">
+                            <input id="mejor-area" class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="p">
+                            <span class="ml-4 mr-2">cm</span>
+                            <input id="minor-area" class="w-20 bg-slate-500 rounded-sm" type="text" placeholder="b">
+                            <span class="ml-4 mr-2">cm</span>
+                         </div>
+                         <div>
+                            <p>Area: <span id="ellipse-area">0</span><span>cm<sup>2</sup></span></p>
+                         </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="ellipseInputOutput()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -164,6 +174,7 @@
    <script src="script/rectangle.js"></script>
    <script src="script/parallelogram.js"></script>
    <script src="script/pentagon.js"></script>
+   <script src="script/ellipse.js"></script>
 
 </body>
 
